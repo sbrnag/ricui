@@ -1,0 +1,46 @@
+<div>
+    <header>
+        <div class="pure-g hero-unit">
+            <h1>Referral India</h1>
+        </div>
+        <a ng-click="logout()" href="">Logout</a>
+    </header>
+</div>
+
+
+{{message}}
+
+<div> Post jobs 
+<ul>
+    <li ng-repeat="job in jobs">
+  			<input ng-model="job.company" type="text" name="company"
+				placeholder="Company name" /> 
+			<input ng-model="job.position" type="text"
+				name="Position" placeholder="position" />
+			<input ng-model="job.skills"
+				type="text" name="skill" placeholder="Skills , seperated" /> 
+			<input
+				ng-model="job.expFrom" type="text" name="expfrom"
+				placeholder="Experience from" /> 
+			<input
+				ng-model="job.expTo" type="text" name="expto"
+				placeholder="Experience to" /> 
+			<input
+				ng-model="job.location" type="text" name="location"
+				placeholder="Location" />
+			<input
+				ng-model="job.jobId" type="text" name="jobcode"
+				placeholder="Jobe code" /> 			 		
+			[ <a href="" ng-click="clear(job)">clear</a>
+            | <a href="" ng-click="remove(job)">X</a> ]
+    </li>
+    <li>[ <a href="" ng-click="add()">add</a> ] <input type="submit" value="Post" ng-click="postJobs(jobs)"/> </li>
+
+ </ul>
+</div>
+
+
+
+
+<div> Referral Jobs </div>
+ 

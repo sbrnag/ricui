@@ -1,0 +1,36 @@
+
+
+
+<div>
+	{{loginmessage}}
+	<form class="pure-form" ng-submit="login()">
+        <input type="text" placeholder="Username or Email..." name="usernameoremail" ng-model="usernameoremail" required/>
+        <input type="password" placeholder="Password..." name="password" ng-model="password" required/>
+        <a href="/password_reset">forgot password?</a>
+        <button type="submit" >Sign in</button>
+    </form>           
+</div>
+
+
+<div>
+	    {{signupmessage}}
+		<form ng-submit="signup()">
+			<input ng-model="firstname" type="text" name="fn"
+				placeholder="First name" /> 
+			<input ng-model="lastname" type="text"
+				name="ln" placeholder="Last name" />
+			</br>
+			<input ng-model="username" type="text"
+				name="un" placeholder="user name" />
+			<input ng-model="email"
+				type="text" name="email" placeholder="Email" /> 
+			</br>
+			<input
+				ng-model="newpassword" type="password" name="newpassword"
+				placeholder="New password" /> 
+			<button type="submit" >Sign up</button>
+		</form>
+</div>	
+
+
+
